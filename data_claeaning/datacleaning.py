@@ -31,7 +31,7 @@ df['SC4']=df['SC4'].replace(to_replace=[i for i in range(0,3999)],value="")
 df.info()
 
 # Output
-df.to_csv('processed.csv', index=False)
+df.to_csv('cleaned_survey.csv', index=False)
 
 # Select columns
 demo_satisfaction = ['SC2','SC3','SC4','B2b','H9New','H10','H11','H12','Z1','Z5','Z10','WEIGHT']
